@@ -4,6 +4,7 @@ import { Breadcrupb } from "../../components/breadcrumb/Breadcrupb";
 import { SearchForm } from "../../components/search-form/SearchForm";
 import { TicketTable } from "../../components/ticket-table/TicketTable";
 import tickets from "../../assets/data/dummy-ticket.json";
+import { Link } from "react-router-dom";
 
 export const TicketListing = () => {
   const [str, setStr] = useState("");
@@ -38,7 +39,9 @@ export const TicketListing = () => {
       </Row>
       <Row className="mt-4">
         <Col>
-          <Button variant="primary">Add New Ticket</Button>
+          <Link to="/pages/add-ticket">
+            <Button variant="primary">Add New Ticket</Button>
+          </Link>
         </Col>
         <Col className="text-right">
           <SearchForm handleOnChange={handleOnChange} str={str} />
