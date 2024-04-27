@@ -1,5 +1,11 @@
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
+import {
+  BrowserRouter as Browser,
+  Switch,
+  Link,
+  Route,
+} from "react-router-dom";
 
 export const Header = () => {
   return (
@@ -8,9 +14,13 @@ export const Header = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ms-auto mx-4">
-          <Nav.Link href="/dashboard">Dashboard</Nav.Link>
+          <Link to="/dashboard">Dashboard</Link>
+          <Link to="/dashboard">Tickets</Link>
+          <Link to="/dashboard">Logout</Link>
+
+          {/* <Nav.Link href="/dashboard">Dashboard</Nav.Link>
           <Nav.Link href="/dashboard">Tickets</Nav.Link>
-          <Nav.Link href="/dashboard">Logout</Nav.Link>
+          <Nav.Link href="/dashboard">Logout</Nav.Link> */}
         </Nav>
       </Navbar.Collapse>
     </Navbar>
