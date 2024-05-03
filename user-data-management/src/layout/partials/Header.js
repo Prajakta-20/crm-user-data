@@ -1,17 +1,10 @@
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
-import { Navigate } from "react-router-dom";
+// import { Navigate } from "react-router-dom";
 import { LinkContainer } from "react-router-bootstrap";
 // import { EntryPage } from "../../page/entry/EntryPage";
 
 export const Header = () => {
-  // const navigate = useNavigate();
-
-  const logMeOut = () => {
-    <Navigate to={"/"} />;
-    // navigate("../pages/dashboard");
-  };
-
   return (
     <Navbar collapseOnSelect bg="info" variant="info" expand="md">
       <Navbar.Brand className="mx-4">Admin</Navbar.Brand>
@@ -24,8 +17,8 @@ export const Header = () => {
           <LinkContainer to="/pages/tickets">
             <Nav.Link>Tickets</Nav.Link>
           </LinkContainer>
-          <LinkContainer to="">
-            <Nav.Link onClick={logMeOut}>Logout</Nav.Link>
+          <LinkContainer to="/logout">
+            <Nav.Link>Logout</Nav.Link>
           </LinkContainer>
         </Nav>
       </Navbar.Collapse>

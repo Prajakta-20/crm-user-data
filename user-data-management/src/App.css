@@ -10,11 +10,28 @@
 
 header{
     grid-area: header;
+    margin-bottom: 0;
 }
 
 main{
-    grid-area: main;
-    min-height: 88vh;
+    /* grid-area: main;
+    min-height: 88vh; */
+    display: flex;
+    height: 100vh;
+}
+
+.main .sidebar-container{
+    width: 18%;
+    border-right: 2px solid gray;
+    margin-top: -25px;
+    box-shadow: 8px 0px 25px -10px black;
+    
+}
+
+.main .content-container{
+    width: 82%;
+    height: 100%;
+    
 }
 
 footer{

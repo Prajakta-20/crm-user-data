@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Button, Row, Col } from "react-bootstrap";
+// import { Form, Button, Row, Col } from "react-bootstrap";
 import PropTypes from "prop-types";
 import "./AddTicket_form.css";
 
@@ -8,10 +8,24 @@ export const AddTicketForm = ({ handleOnSubmit, handleOnChange, frmDt }) => {
 
   return (
     <div>
-      <div className="mx-auto mt-4 p-2 bg-light rounded-3 w-75 add-new-ticket">
+      {/* <div className="mx-auto my-1 p-2 bg-light rounded-3 w-75 add-new-ticket">
         <h1 className="text-secondary text-center">Add New Ticket</h1>
         <div className="container-fluid py-4">
           <Form autoComplete="off" onSubmit={handleOnSubmit}>
+            <Form.Group as={Row} className="my-1">
+              <Form.Label column sm={3}>
+                Name
+              </Form.Label>
+              <Col sm={9}>
+                <Form.Control
+                  name="name"
+                  onChange={handleOnChange}
+                  value={frmDt.subject}
+                  placeholder="Name"
+                  required
+                />
+              </Col>
+            </Form.Group>
             <Form.Group as={Row} className="my-2">
               <Form.Label column sm={3}>
                 Subject
@@ -61,7 +75,7 @@ export const AddTicketForm = ({ handleOnSubmit, handleOnChange, frmDt }) => {
             </div>
           </Form>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

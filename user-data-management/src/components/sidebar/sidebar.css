@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+
+.sidebar{
+    margin-top: 5%;
+}
+
+.sidebar-item{
+    width: 100%;
+    padding : 10px 0px;
+}
+
+.sidebar-link{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    padding: 7px 0px;
+}
+
+.top-items{
+    font-size: 30px;
+}
+
+.activeLink{
+    background-color: #0dcaf0;
+}
+
+.icon{
+    margin-right: 10px;
+}
+
+.textLink{
+    margin: 0px 50px;
+}
